@@ -5,19 +5,16 @@ title: docs
 
 docs index
 
-:
-{% for collection in site.collections %}
     <ul>
+
+{% for collection in site.collections %}
         <li><a href="{{ collection.directory }}">{{ collection.title }}</a></li>
+{% endfor %}
     </ul>
-{% endfor %}
-:
 
 
-:
-{% for doc in site.docs %}
     <ol>
+{% for doc in site.docs %}
         <li><a href="{{ doc.directory }}">{{ doc.title }}</a></li>
-    </ol>
 {% endfor %}
-:
+    </ol>
