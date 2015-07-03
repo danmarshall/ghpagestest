@@ -5,24 +5,24 @@ layout: default
 {{ content }}
 
 <ul>
-{% for snippet in page.snippets %}
-  {% for allpage in site.snippets %}
-    {% if allpage.title == snippet %}
-      <li><a href="#{{ allpage.title }}">{{ allpage.title }}</a></li>
+{% for snippet_title in page.snippet_titles %}
+  {% for snippet in site.snippets %}
+    {% if snippet.title == snippet_title %}
+      <li><a href="#{{ snippet.title }}">{{ snippet.title }}</a></li>
     {% endif %}
   {% endfor %}
 {% endfor %}
 </ul>
 
 
-{% for snippet in page.snippets %}
-  {% for allpage in site.snippets %}
-    {% if allpage.title == snippet %}
+{% for snippet_title in page.snippet_titles %}
+  {% for snippet in site.snippets %}
+    {% if snippet.title == snippet_title %}
 
 <section>
-  <h3>{{ allpage.title }}</h3>
+  <h3>{{ snippet.title }}</h3>
 
-  {{ allpage.content }}
+  {{ snippet.content }}
   
 </section>
 
