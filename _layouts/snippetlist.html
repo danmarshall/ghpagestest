@@ -5,6 +5,8 @@ snippetlist
 
 fart:{{ page.fart }}:
 
+snippets:{% for snippet in page.snippets %}{{ snippet }},{% endfor %}:
+
 {{ content }}
 
 <ul>
