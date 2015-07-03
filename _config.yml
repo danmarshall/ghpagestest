@@ -1,3 +1,2 @@
 collections:
-  docs:
-    output: true
+-  docs
