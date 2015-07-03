@@ -1,4 +1,3 @@
 baseurl: /ghpagestest
 collections:
-  mydocs:
-    output: true
+ -mydocs
