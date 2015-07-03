@@ -8,3 +8,7 @@ title: docs
 <li><a href="basic-drawing">basic drawing</a></li>
 <li>api</li>
 </ul>
+
+{% for p in site.pages %}
+{{ p.path }}<hr/>
+{% endfor %}
