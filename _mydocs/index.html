@@ -15,6 +15,6 @@ docs index
 
     <ol>
 {% for doc in site.mydocs %}
-        <li><a href="{{ doc.directory }}">{{ doc.title }}</a></li>
+        <li><a href="{{ doc.relative_path }}">{{ doc.title }}</a></li>
 {% endfor %}
     </ol>
