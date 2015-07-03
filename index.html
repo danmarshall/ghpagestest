@@ -8,9 +8,18 @@ home!
 
     <ol>
 {% for doc in site.docs_getting_started %}
-        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+        <li><a href="#{{ doc.title }}">{{ doc.title }}</a></li>
 {% endfor %}
     </ol>
+
+
+{% for doc in site.docs_getting_started %}
+    <section>
+        <a name="{{ doc.title }}"/>
+        <h2>{{ doc.title }}</h2>
+        <div>{{ doc.content }}</div>
+    </section>
+{% endfor %}
 
 
 {% highlight ruby %}
