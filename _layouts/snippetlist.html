@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<ul>
+{% for page in site.pages %}
+  {% for snippet in snippets %}
+    {% if page.title == snippet %}
+      <li><a href="#{{ doc.title }}">{{ doc.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</ul>
+
+
+{% for page in site.pages %}
+  {% for snippet in snippets %}
+    {% if page.title == snippet %}
+{{ page.content }}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
