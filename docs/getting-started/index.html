@@ -5,3 +5,9 @@ layout: default
 need to do that trick.
 
 see if I can get files within this very folder
+
+<hr/>
+
+{% for page in site.pages %}
+<a href="{{ page.url }}">{{ page.title }}</a><br/>
+{% endfor %} 
