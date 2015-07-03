@@ -6,7 +6,7 @@ layout: default
 
 <ul>
 {% for snippet in page.snippets %}
-  {% for allpage in site.pages %}
+  {% for allpage in site.snippets %}
     {% if allpage.title == snippet %}
       <li><a href="#{{ allpage.title }}">{{ allpage.title }}</a></li>
     {% endif %}
@@ -16,7 +16,7 @@ layout: default
 
 
 {% for snippet in page.snippets %}
-  {% for allpage in site.pages %}
+  {% for allpage in site.snippets %}
     {% if allpage.title == snippet %}
 
 <section>
