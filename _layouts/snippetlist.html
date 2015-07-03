@@ -7,8 +7,8 @@ title:{{ page.title }}:
 {{ content }}
 
 <ul>
-{% for allpage in site.pages %}
-  {% for snippet in page.snippets %}
+{% for snippet in page.snippets %}
+  {% for allpage in site.pages %}
     {% if allpage.title == snippet %}
       <li><a href="#{{ allpage.title }}">{{ allpage.title }}</a></li>
     {% endif %}
@@ -17,8 +17,8 @@ title:{{ page.title }}:
 </ul>
 
 
-{% for allpage in site.pages %}
-  {% for snippet in page.snippets %}
+{% for snippet in page.snippets %}
+  {% for allpage in site.pages %}
     {% if allpage.title == snippet %}
 
 <section>
