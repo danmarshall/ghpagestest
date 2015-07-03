@@ -1,19 +1,5 @@
 ---
-layout: default
+layout: snippetlist
+title: getting started
+snippets: [for-node, for-the-browser]
 ---
-
-need to do that trick.
-
-see if I can get files within this very folder
-
-<hr/>
-
-{% for doc in site.docs_getting_started %}
-        <li><a href="#{{ doc.title }}">{{ doc.title }}</a></li>
-{% endfor %}
-    </ol>
-
-
-{% for doc in site.docs_getting_started %}
-  {{ doc.content }}
-{% endfor %}
