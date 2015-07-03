@@ -12,3 +12,12 @@ docs index
     </section>
 {% endfor %}
 :
+
+
+:
+{% for doc in site.docs %}
+    <section>
+        <h1><a href="{{ doc.directory }}">{{ doc.title }}</a></h1>
+    </section>
+{% endfor %}
+:
