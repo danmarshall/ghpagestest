@@ -7,17 +7,17 @@ docs index
 
 :
 {% for collection in site.collections %}
-    <section>
-        <h1><a href="{{ collection.directory }}">{{ collection.title }}</a></h1>
-    </section>
+    <ul>
+        <li><a href="{{ collection.directory }}">{{ collection.title }}</a></li>
+    </ul>
 {% endfor %}
 :
 
 
 :
 {% for doc in site.docs %}
-    <section>
-        <h1><a href="{{ doc.directory }}">{{ doc.title }}</a></h1>
-    </section>
+    <ol>
+        <li><a href="{{ doc.directory }}">{{ doc.title }}</a></li>
+    </ol>
 {% endfor %}
 :
