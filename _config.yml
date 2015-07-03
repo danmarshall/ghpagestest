@@ -1,4 +1,4 @@
 baseurl: /ghpagestest
 collections:
 - mydocs
-- docs_getting_started
+- snippets
