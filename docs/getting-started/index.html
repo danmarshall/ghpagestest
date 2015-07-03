@@ -8,6 +8,16 @@ see if I can get files within this very folder
 
 <hr/>
 
-{% for page in site.pages %}
-<a href="{{ page.url }}">{{ page.title }}</a><br/>
-{% endfor %} 
+{% for doc in site.docs_getting_started %}
+        <li><a href="#{{ doc.title }}">{{ doc.title }}</a></li>
+{% endfor %}
+    </ol>
+
+
+{% for doc in site.docs_getting_started %}
+    <section>
+        <a name="{{ doc.title }}"/>
+        <h2>{{ doc.title }}</h2>
+        <div>{{ doc.content }}</div>
+    </section>
+{% endfor %}
