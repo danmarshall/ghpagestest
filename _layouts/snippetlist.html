@@ -23,7 +23,7 @@ snippets:{% for snippet in page.snippets %}{{ snippet }},{% endfor %}:
 
 {% for allpage in site.pages %}
   {% for snippet in page.snippets %}
-  {{ allpage.title }} to {{ snippet }}
+  {{ allpage.title }} to {{ snippet }}<hr/>
     {% if allpage.title == snippet %}
 {{ allpage.content }}
     {% endif %}
